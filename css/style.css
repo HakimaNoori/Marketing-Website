@@ -1,0 +1,13 @@
+/* Some custom styles to beautify this example */
+.demo-content {
+  padding: 15px;
+  font-size: 18px;
+  background: #699eed;
+  margin-bottom: 15px;
+}
+
+.demo-content.bg-alt {
+  background: #07e93c;
+}
+
+

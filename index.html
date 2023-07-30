@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- Sidebar on click -->
+<nav class="sidebar bg-white border-right" style="display:none;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="navbar-nav ml-auto"
+> Close <i class="fa fa-remove"></i>
+    </a>
+    <a href="#" class="nav-link">Link 1</a>
+    <a href="#" class="nav-link">Link 2</a>
+    <a href="#" class="nav-link">Link 3</a>
+    <a href="#" class="nav-link">Link 4</a>
+    <a href="#" class="nav-link">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="fixed-top">
+    <div class="navbar navbar-dark bg-dark">
+     <a class="d-md-none d-lg-none float-right btn btn-secondary btn-sm" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+     <a href="#" class="nav-item nav-link text-white bg-info"
+     ><i class="fa fa-home w3-margin-right"></i>Logo</a>
+     <a href="#team" class="nav-item d-none d-sm-block">Team</a>
+     <a href="#work" class="nav-item d-none d-sm-block">Work</a>
+     <a href="#pricing"class="nav-item d-none d-sm-block" >Price</a>
+     <a href="#contact" class="nav-item d-none d-sm-block">Contact</a>
+       <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" title="Notifications">
+        Dropdown <span class="caret"></span></button>     
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="#">Link</a>
+         <a class="dropdown-item" href="#">Link</a>
+         <a class="dropdown-item" href="#">Link</a>
+       </div>
+     </div>
+     <a href="#" class="nav-item d-none d-sm-block ml-auto mr-2 my-auto" title="Search"><i class="fa fa-search"></i></a>
+    </div>
+   
+     <!-- Navbar on small screens -->
+     <div class="d-md-none d-lg-none d-xl-none" id="navDemo" >
+       <a href="#team"  class="nav-item nav-link">Team</a>
+       <a href="#work" class="nav-item nav-link">Work</a>
+       <a href="#pricing" class="nav-item nav-link">Price</a>
+       <a href="#contact" class="nav-item nav-link">Contact</a>
+       <a href="#" class="nav-item nav-link">Search</a>
+     </div>
+    </div>
+
+<!-- Image Header -->
+<div class="position-relative animate-opacity">
+    <img src="/images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+    <div class="container position-absolute bottom-0 start-0 mb-3">  
+      <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-lg btn-theme-color btn-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+      <header class="container bg-info position-relative"> 
+        <span onclick="document.getElementById('id01').style.display='none'" class="btn btn-primary position-absolute top-0 end-0"
+        ><i class="fa fa-remove"></i></span>
+        <h4>Oh snap! We just showed you a modal..</h4>
+        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="container">
+        <p>Cool huh? Ok, enough teasing around..</p>
+        <p>Go to our <a class="text-primary" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+      </div>
+      <footer class="bg-teal text-white py-3">
+
+        <p>Modal footer</p>
+      </footer>
+    </div>
+</div>
+<!-- Team Container -->
+<div class="container py-5 text-center" id="team">
+  <h2>OUR TEAM</h2>
+  <p>Meet the team - our office rats:</p>
+
+  <div class="row">
+
+    <div class="col-md-3">
+      <img src="/images/avatar.jpg" alt="Boss" style="width:45%" class="rounded-circle mx-auto d-block img-fluid opacity-20">
+      <h3>Johnny Walker</h3>
+      <p>Web Designer</p>
+    </div>
+
+    <div class="col-md-3">
+      <img src="/images/avatar.jpg" alt="Boss" style="width:45%" class="rounded-circle mx-auto d-block img-fluid opacity-20">
+      <h3>Rebecca Flex</h3>
+      <p>Support</p>
+    </div>
+
+    <div class="col-md-3">
+      <img src="/images/avatar.jpg" alt="Boss" style="width:45%" class="rounded-circle mx-auto d-block img-fluid opacity-20">
+      <h3>Jan Ringo</h3>
+      <p>Boss man</p>
+    </div>
+
+    <div class="col-md-3">
+      <img src="/images/avatar.jpg" alt="Boss" style="width:45%" class="rounded-circle mx-auto d-block img-fluid opacity-20">
+      <h3>Kai Ringo</h3>
+      <p>Fixer</p>
+    </div>
+  </div>
+</div>
+<!-- Work Row -->
+<div class="row py-4 bg-light bg-dark" id="work"> 
+  <div class="col-md-3 width">
+    <h2>Our Work</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+<div class="col-md-3">
+    <div class="card">
+      <img src="/images/snow.jpg" alt="Snow" style="width:100%" class="img-fluid">
+      <div class="card-body">
+        <h3>Customer 1</h3>
+        <h4>Trade</h4>
+        <p>Blablabla</p>
+        <p>Blablabla</p>
+        <p>Blablabla</p>
+        <p>Blablabla</p>
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-3">
+    <div class="card">
+      <img src="/images/lights.jpg" alt="Lights" style="width:100%" class="img-fluid">
+      <div class="card-body">
+        <h3>Customer 2</h3>
+        <h4>Trade</h4>
+        <p>Blablabla</p>
+        <p>Blablabla</p>
+        <p>Blablabla</p>
+        <p>Blablabla</p>
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-3">
+    <div class="card">
+      <img src="/images/mountains.jpg" alt="Mountains" style="width:100%" class="img-fluid">
+      <div class="card-body">
+        <h3>Customer 3</h3>
+        <h4>Trade</h4>
+        <p>Blablabla</p>
+        <p>Blablabla</p>
+        <p>Blablabla</p>
+        <p>Blablabla</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="container">
+<!--- Contaner --->
+    <div class="container" style="position:relative;">
+      <a onclick="w3_open()" class="btn btn-primary btn-lg rounded-circle bg-teal text-white"
+        style="position:absolute;top:-28px;right:24px;">+</a>
+    </div>
+
+<!-- Pricing Row -->
+<div class="container-fluid py-5" id="pricing">
+  <div class="container">
+    <h2 class="text-center">PRICING</h2>
+    <p class="text-center">Choose a pricing plan that fits your needs.</p>
+    <div class="row py-3">
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item bg-info text-white text-center">
+            <p class="h3">Basic</p>
+          </li>
+          <li class="list-group-item"><b>10GB</b> Storage</li>
+          <li class="list-group-item"><b>10</b> Emails</li>
+          <li class="list-group-item"><b>10</b> Domains</li>
+          <li class="list-group-item"><b>Endless</b> Support</li>
+          <li class="list-group-item text-center">
+            <h2><i class="fa fa-usd"></i> 10</h2>
+            <span class="text-muted">per month</span>
+          </li>
+          <li class="list-group-item text-center">
+            <button class="btn btn-primary btn-lg">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item bg-info text-white text-center">
+            <p class="h3">Pro</p>
+          </li>
+          <li class="list-group-item"><b>25GB</b> Storage</li>
+          <li class="list-group-item"><b>25</b> Emails</li>
+          <li class="list-group-item"><b>25</b> Domains</li>
+          <li class="list-group-item"><b>Endless</b> Support</li>
+          <li class="list-group-item text-center">
+            <h2><i class="fa fa-usd"></i> 25</h2>
+            <span class="text-muted">per month</span>
+          </li>
+          <li class="list-group-item text-center">
+            <button class="btn btn-primary btn-lg">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item bg-info text-white text-center">
+            <p class="h3">Premium</p>
+          </li>
+          <li class="list-group-item"><b>50GB</b> Storage</li>
+          <li class="list-group-item"><b>50</b> Emails</li>
+          <li class="list-group-item"><b>50</b> Domains</li>
+          <li class="list-group-item"><b>Endless</b> Support</li>
+          <li class="list-group-item text-center">
+            <h2><i class="fa fa-usd"></i> 50</h2>
+            <span class="text-muted">per month</span>
+          </li>
+          <li class="list-group-item text-center">
+            <button class="btn btn-primary btn-lg">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Contact Container -->
+<div class="container py-4 bg-light" id="contact">
+  <div class="row">
+    <div class="col-md-5">
+    <div class="py-4"><span class="h1 border-bottom border-info">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+<p><i class="fa fa-map-marker text-info h2"></i> Chicago, US</p>
+<p><i class="fa fa-phone text-info h2"></i> +00 1515151515</p>
+<p><i class="fa fa-envelope-o text-info h2"></i> test@test.com</p>
+    </div>
+    <div class="col-md-7">
+      <form class="card card-body" action="/action_page.php" target="_blank">
+        <div class="form-group">
+          <label for="Name">Name</label>
+          <input class="form-control" type="text" name="Name" required>
+        </div>
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input class="form-control" type="text" name="Email" required>
+        </div>
+        <div class="form-group">
+          <label for="Message">Message</label>
+          <input class="form-control" type="text" name="Message" required>
+        </div>
+        <div class="form-group form-check">
+          <input class="form-check-input" type="checkbox" checked name="Like" id="Like">
+          <label class="form-check-label" for="Like">I Like it!</label>
+        </div>
+        <button type="submit" class="btn btn-primary float-right">Send</button>
+      </form>
+    </div>
+    </div>
+    </div>
+
+  <!-- Image of location/map -->
+  <img src="/images/map.jpg" class="img-fluid img-grayscale" style="width:100%;">
+
+  <!-- Footer -->
+  <footer class="container-fluid py-5 bg-primary text-white text-center">
+    <h4>Follow Us</h4>
+    <a class="btn btn-lg btn-primary" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="btn btn-lg btn-primary" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="btn btn-lg btn-primary" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+    <a class="btn btn-lg btn-primary" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+    <a class="btn btn-lg btn-primary d-none d-sm-inline-block" href="javascript:void(0)" title="Linkedin"><i
+        class="fa fa-linkedin"></i></a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  
+    <div style="position:relative;bottom:100px;z-index:1;" class="tooltip right">
+      <span class="text-teal p-2 d-none d-sm-block">Go To Top</span>
+      <a class="btn btn-primary" href="#myPage"><span class="display-1">
+          <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+  </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
